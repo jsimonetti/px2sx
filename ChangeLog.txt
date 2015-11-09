@@ -1,0 +1,19 @@
+PS2SX Changelog:
+================
+10/7/12		v2.58 Many changes since the last release, including;
+								Renamed the -p flag to -s for service-only matching
+								Added -p flag to prepend policies with <string> like CP2SX - Pete insisted
+								Removed -r flag in favour of -p flag (above)
+								Fixed writing to the global address-book to work properly
+								Added a template file of "predefined" applications, as used by services.csv
+								Fixed multiple bugs in port "range" syntax handling
+								Fixed a bug where destination port "gt" syntax was not handled at all
+								Added V8 'new' style support for objects (but not NATs as yet)
+
+28/2/12		v2.53	Added -g flag for writing address objects to the global address-book - for Alastair
+
+17/2/12		v2.52 Fixed bug when standby IP addresses are present in 'new' style configurations - thanks Rick
+
+17/11/11	v2.51 Fixed bug in a core routine when used with newer versions of NetAddr::IP - thanks Andrew
+
+11/11/11	v2.5 Intial open release
