@@ -14,6 +14,10 @@ no strict;
 use Getopt::Std;
 use Scalar::Util qw(looks_like_number);
 use NetAddr::IP;
+use Cwd 'abs_path';
+use File::Basename;
+
+$my_path = dirname(abs_path($0));
 
 if ($#ARGV < 0 || $#ARGV > 5) { die "\nUsage:\tperl px2sx.pl [-cgjns] [-p <STRING>] [-z <zone.file>] <config.file>\n
 Flags:\t-c Create .CSV files as well as Junos configuration
@@ -161,7 +165,7 @@ if (!defined $options{z}) {
 	@zones=<file>;
 	close(file);
 }
-open(file, "< services.csv") or die "Can't open services file for read\n";
+open(file, "< $my_path/services.csv") or die "Can't open services file for read\n";
 @svcs=<file>;
 close(file);
 foreach $svc (@svcs) {
