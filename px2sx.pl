@@ -1,4 +1,4 @@
-#!perl
+#!/usr/bin/perl
 # px2sx.pl, version 2.58, 10th July 2012, (c) Telecom NZ Ltd
 # Originally created by David Hunter <david.hunter@gen-i.co.nz>
 # Distributed under the Artistic License 2.0
