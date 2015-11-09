@@ -11,6 +11,7 @@
 
 use 5.012;
 no strict;
+no warnings 'experimental';
 use Getopt::Std;
 use Scalar::Util qw(looks_like_number);
 use NetAddr::IP;
